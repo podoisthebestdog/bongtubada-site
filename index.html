@@ -3,11 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="봉투바다 - 결혼식 축의금 현장 접수·2인 교차확인·전산기록·대사·인계 서비스">
+<meta name="description" content="봉투바다는 결혼식 축의금 접수 대행 서비스입니다. 2인 교차확인 및 영상기록, 전산 기록, 최종 금액 검증, 인수권한 확인 절차로 축의금을 정확하고 투명하게 관리합니다.">
 <meta name="theme-color" content="#071B32">
-<meta property="og:title" content="봉투바다 | ENVELOPE OCEAN">
-<meta property="og:description" content="소중한 마음이 정확히 전달되도록, 접수부터 인계까지.">
-<title>봉투바다 | 축의금 현장확인형 서비스</title>
+<title>봉투바다 | 결혼식 축의금 접수·정산 대행 서비스</title>
 <style>
 :root{
   --navy:#071b32;--navy2:#0e2b4c;--navy3:#163d67;
@@ -440,7 +438,89 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
   details{padding:0 16px}
 }
 
+
+/* 전화상담 예약 */
+.hbtn.call-open{cursor:pointer}
+.call-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.call-modal.open{display:flex}
+.call-backdrop{position:absolute;inset:0;background:rgba(2,13,25,.72);backdrop-filter:blur(8px)}
+.call-dialog{position:relative;z-index:1;width:min(100%,680px);max-height:min(88vh,780px);overflow:auto;background:#fff;border-radius:28px;padding:38px;box-shadow:0 32px 100px rgba(0,0,0,.28)}
+.call-dialog h2{margin-top:2px;margin-bottom:10px}
+.call-lead{margin:0 0 26px;color:var(--muted);line-height:1.75}
+.call-close{position:absolute;right:18px;top:15px;width:42px;height:42px;border:0;border-radius:50%;background:#f2f4f6;color:var(--navy);font-size:28px;line-height:1;cursor:pointer}
+.call-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.call-form label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:800;color:var(--navy)}
+.call-form label.full{grid-column:1/-1}
+.call-form input,.call-form select,.call-form textarea{width:100%;min-width:0;border:1px solid #d8dee4;border-radius:12px;background:#fcfdfe;color:var(--ink);padding:13px 14px;font:inherit;font-weight:500}
+.call-form input,.call-form select{min-height:49px}
+.call-form textarea{min-height:105px;resize:vertical}
+.call-form input:focus,.call-form select:focus,.call-form textarea:focus{outline:none;border-color:#a98445;background:#fff;box-shadow:0 0 0 3px rgba(214,173,99,.15)}
+.call-consent{margin:18px 0;flex-direction:row!important;align-items:flex-start;gap:9px!important;color:#687485!important;font-size:12px!important;font-weight:600!important;line-height:1.55}
+.call-consent input{width:17px!important;min-height:auto!important;margin-top:2px;padding:0}
+.call-consent a{text-decoration:underline}
+.call-submit{width:100%;background:var(--navy);color:#fff;border:0;cursor:pointer}
+.call-submit[disabled]{opacity:.6;cursor:wait}
+.call-status{min-height:23px;margin:12px 0 0;font-size:13px;color:#52606f;text-align:center}
+body.modal-open{overflow:hidden}
+@media(max-width:640px){.call-modal{padding:12px}.call-dialog{padding:30px 20px 24px;border-radius:22px;max-height:90vh}.call-form-grid{grid-template-columns:1fr}.call-form label.full{grid-column:auto}}
+
 </style>
+
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://envelopeocean.netlify.app/">
+<link rel="alternate" hreflang="ko-KR" href="https://envelopeocean.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="봉투바다">
+<meta property="og:url" content="https://envelopeocean.netlify.app/">
+<meta property="og:title" content="봉투바다 | 결혼식 축의금 접수·정산 대행 서비스">
+<meta property="og:description" content="봉투바다는 결혼식 축의금 접수 대행 서비스입니다. 2인 교차확인 및 영상기록, 전산 기록, 최종 금액 검증, 인수권한 확인 절차로 축의금을 정확하고 투명하게 관리합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="봉투바다 | 결혼식 축의금 접수·정산 대행 서비스">
+<meta name="twitter:description" content="봉투바다는 결혼식 축의금 접수 대행 서비스입니다. 2인 교차확인 및 영상기록, 전산 기록, 최종 금액 검증, 인수권한 확인 절차로 축의금을 정확하고 투명하게 관리합니다.">
+<meta name="google-site-verification" content="5bXvuTHWX_fRLUMHIcf5hVcW8tuSc-VT2bNGu_1pe3I" />
+<meta name="naver-site-verification" content="0bbf0226b2b73f68362a94ae6ff0fba4de2ea6b7" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://envelopeocean.netlify.app/#organization",
+      "name": "봉투바다",
+      "alternateName": "Envelope Ocean",
+      "url": "https://envelopeocean.netlify.app/",
+      "email": "gusals933246@gmail.com",
+      "sameAs": [
+        "https://pf.kakao.com/_VAExiX/friend"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://envelopeocean.netlify.app/#website",
+      "url": "https://envelopeocean.netlify.app/",
+      "name": "봉투바다",
+      "alternateName": "Envelope Ocean",
+      "inLanguage": "ko-KR",
+      "publisher": {
+        "@id": "https://envelopeocean.netlify.app/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://envelopeocean.netlify.app/#service",
+      "name": "결혼식 축의금 접수·정산 대행",
+      "serviceType": "결혼식 축의금 접수 대행 서비스",
+      "provider": {
+        "@id": "https://envelopeocean.netlify.app/#organization"
+      },
+      "url": "https://envelopeocean.netlify.app/",
+      "description": "결혼식 현장에서 축의금을 접수하고 2인 교차확인 및 영상기록, 전산 기록, 최종 금액 검증, 인수권한 확인 절차를 통해 관리하는 서비스입니다."
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 <header class="header">
@@ -453,7 +533,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
       <a href="#about">봉투바다</a><a href="#service">서비스</a><a href="#process">이용 절차</a><a href="#price">이용 요금</a><a href="#faq">FAQ</a><a href="#contact">문의하기</a>
     </nav>
     <div class="header-actions">
-      <a class="hbtn" href="tel:01094436129">☎ 전화 상담</a>
+      <a class="hbtn call-open" href="#call-reservation">☎ 전화상담 예약</a>
       <a class="hbtn kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">● 카카오톡 상담</a>
     </div>
     <button class="menu" id="menu">☰</button>
@@ -466,7 +546,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
     <div class="hero-copy">
       <div class="eyebrow">Wedding cash reception service</div>
       <h1>소중한 마음이<br>온전히 전달되도록,<br><span class="gold">봉투바다</span>가 함께합니다.</h1>
-      <p>소중한 축의금을 다루는 만큼, 접수부터 2인 교차확인·전산 기록·최종 대사·지정 인수자 인계까지 모든 과정을 기록과 검증 절차로 관리합니다. 혼주가 안심하고 맡길 수 있도록 정확성과 투명성을 기준으로 운영합니다.</p>
+      <p>소중한 축의금을 다루는 만큼, 접수부터 2인 교차확인 및 영상기록·전산 기록·최종 금액 검증·인수권한 확인까지 모든 과정을 기록과 검증 절차로 관리합니다. 혼주가 안심하고 맡길 수 있도록 정확성과 투명성을 기준으로 운영합니다.</p>
       <div class="actions">
         <a class="btn btn-kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">카카오톡으로 빠르게 상담하기 →</a>
         <a class="btn btn-ghost" href="#service">운영 방식 자세히 보기</a>
@@ -478,10 +558,10 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
 
 <section class="trust-strip">
   <div class="wrap trust-grid">
-    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div><b>2인 교차확인</b><span>한 사람에게 계수·검수를 집중하지 않습니다.</span></div></div>
+    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div><b>2인 교차확인 및 영상기록</b><span>계수·검수 과정을 2인이 교차확인하고, 사전에 안내된 범위에서 영상으로 기록합니다.</span></div></div>
     <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h11l3 3v15H5z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div><div><b>전산 기록</b><span>접수번호와 금액 흐름을 구조적으로 관리합니다.</span></div></div>
-    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5M8.5 11l1.7 1.7 3.4-3.4"/></svg></div><div><b>현장 대사</b><span>접수 건수·총액·실물 현금을 종료 전에 확인합니다.</span></div></div>
-    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M12 4l8 8-8 8"/><path d="M4 6v12"/></svg></div><div><b>지정 인수자 인계</b><span>사전에 정한 수령권한을 확인 후 전달합니다.</span></div></div>
+    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5M8.5 11l1.7 1.7 3.4-3.4"/></svg></div><div><b>최종 금액 검증</b><span>접수 기록·총액·실물 현금을 행사 종료 전 다시 대조합니다.</span></div></div>
+    <div class="trust"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M12 4l8 8-8 8"/><path d="M4 6v12"/></svg></div><div><b>인수권한 확인</b><span>사전에 지정된 인수자의 권한을 확인한 후 현금과 기록을 인계합니다.</span></div></div>
   </div>
 </section>
 
@@ -490,7 +570,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
     <div class="service-copy">
       <div class="eyebrow">About Bongtubada</div>
       <h2>결혼식의 중요한 현금 업무를<br>‘기억’이 아닌 <span style="color:#a77d39">절차와 기록</span>으로.</h2>
-      <p class="lead">봉투바다는 혼주 또는 행사 주최자의 의뢰를 받아 현장에서 축의금을 접수·확인·기록·보관하고, 행사 종료 후 최종 대사하여 지정 인수자에게 인계하는 서비스입니다.</p>
+      <p class="lead">봉투바다는 결혼식 축의금 접수 대행 서비스로, 혼주 또는 행사 주최자의 의뢰를 받아 현장에서 축의금을 접수·확인·기록·보관하고 행사 종료 전 최종 금액을 검증한 뒤 인수권한을 확인해 전달합니다.</p>
       <p class="signature">속도보다 누락·혼입 방지를 우선하고, 현금은 한 봉투씩 처리하는 운영 원칙을 적용합니다.</p>
     </div>
     <div>
@@ -587,7 +667,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
     <div class="eyebrow">Your special day</div>
     <h2>예식 당일,<br>돈을 세는 걱정보다<br>사람에게 집중하세요.</h2>
     <p>예식일과 장소, 예상 하객 수만 알려주시면 필요한 인원과 서비스 범위를 기준으로 상담해드립니다.</p>
-    <div class="actions"><a class="btn btn-kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">카카오톡 상담하기 →</a><a class="btn btn-ghost" href="tel:01094436129">전화 010-9443-6129</a></div>
+    <div class="actions"><a class="btn btn-kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">카카오톡 상담하기 →</a><a class="btn btn-ghost call-open" href="#call-reservation">전화상담 예약 →</a></div>
   </div>
 </section>
 
@@ -595,7 +675,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
   <div class="wrap contact-card">
     <div class="contact-info">
       <div class="eyebrow">Contact</div><h2>행사 날짜와 규모를 알려주세요.</h2><p class="lead">예식일·장소·예상 접수량을 남겨주시면 상담에 필요한 내용을 빠르게 확인할 수 있습니다.</p>
-      <div class="contact-list"><a class="contact-line" href="https://pf.kakao.com/_VAExiX/friend" target="_blank">카카오톡 채널 · 봉투바다 →</a><a class="contact-line" href="tel:01094436129">전화 · 010-9443-6129</a><a class="contact-line" href="mailto:gusals933246@gmail.com">이메일 · gusals933246@gmail.com</a></div>
+      <div class="contact-list"><a class="contact-line" href="https://pf.kakao.com/_VAExiX/friend" target="_blank">카카오톡 채널 · 봉투바다 →</a><a class="contact-line call-open" href="#call-reservation">전화상담 예약 · 연락처 남기기 →</a><a class="contact-line" href="mailto:gusals933246@gmail.com">이메일 · gusals933246@gmail.com</a></div>
     </div>
     <form class="form" onsubmit="sendInquiry(event)">
       <div class="form-grid">
@@ -612,12 +692,38 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
 </section>
 </main>
 
+
+<div class="call-modal" id="callModal" aria-hidden="true">
+  <div class="call-backdrop" data-call-close></div>
+  <section class="call-dialog" id="call-reservation" role="dialog" aria-modal="true" aria-labelledby="callTitle">
+    <button type="button" class="call-close" data-call-close aria-label="닫기">×</button>
+    <div class="eyebrow">Phone consultation</div>
+    <h2 id="callTitle">전화상담 예약</h2>
+    <p class="call-lead">연락처와 편한 시간을 남겨주시면 확인 후 상담 가능한 시간에 연락드립니다.</p>
+    <form id="callReservationForm" class="call-form" onsubmit="submitCallReservation(event)">
+      <input type="hidden" name="_subject" id="callSubject" value="[봉투바다 전화상담 예약]">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="call-form-grid">
+        <label>성함<input name="성함" id="callName" required placeholder="예: 김OO" autocomplete="name"></label>
+        <label>전화번호<input name="전화번호" id="callPhone" type="tel" required placeholder="010-0000-0000" autocomplete="tel" inputmode="tel"></label>
+        <label>희망 상담일<input name="희망 상담일" id="callDate" type="date"></label>
+        <label>희망 시간대<select name="희망 시간대" id="callTime"><option value="시간 협의">시간 협의</option><option value="오전 10시~12시">오전 10시~12시</option><option value="오후 12시~3시">오후 12시~3시</option><option value="오후 3시~6시">오후 3시~6시</option><option value="오후 6시~9시">오후 6시~9시</option></select></label>
+        <label class="full">상담 내용<textarea name="상담 내용" id="callMessage" placeholder="예식일, 지역, 예상 하객 수 등 간단히 적어주세요."></textarea></label>
+      </div>
+      <label class="call-consent"><input type="checkbox" required><span>전화상담 예약을 위해 성함·연락처·희망시간을 수집하고 상담 목적으로 이용하는 데 동의합니다. <a href="privacy.html" target="_blank">개인정보처리방침</a></span></label>
+      <button class="btn call-submit" id="callSubmit" type="submit">전화상담 예약 요청 보내기 →</button>
+      <p class="call-status" id="callStatus" aria-live="polite"></p>
+    </form>
+  </section>
+</div>
+
 <footer>
   <div class="wrap footer-grid">
     <div>
       <div class="footer-brand"><img src="data:image/webp;base64,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" alt="봉투바다 로고"><div><b style="color:white;font-size:18px">봉투바다</b><div style="font-size:10px;letter-spacing:.17em;color:#d6bd8f">ENVELOPE OCEAN</div></div></div>
       <div class="tiny">결혼식 및 행사 축의금 현장확인형 접수·기록·대사·인계 서비스</div>
-      <div class="tiny">대표 장현민 · 010-9443-6129 · gusals933246@gmail.com</div>
+      <div class="tiny">대표 장현민 · gusals933246@gmail.com</div>
     </div>
     <div><div class="footer-links"><a href="privacy.html">개인정보처리방침</a><a href="#faq">FAQ</a><a href="https://pf.kakao.com/_VAExiX/friend" target="_blank">카카오톡 채널</a></div><div class="tiny">© 2026 봉투바다. All rights reserved.</div></div>
   </div>
@@ -626,7 +732,7 @@ details p{padding:0 0 20px;margin:0;line-height:1.75}
 <a class="float-kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">● 카카오톡 상담</a>
 <div class="mobile-bar">
   <a class="mk" href="https://pf.kakao.com/_VAExiX/friend" target="_blank">카카오톡</a>
-  <a class="mc" href="tel:01094436129">전화 상담</a>
+  <a class="mc call-open" href="#call-reservation">전화상담 예약</a>
   <a class="mf" href="#contact">문의 작성</a>
 </div>
 <div class="toast" id="toast"></div>
