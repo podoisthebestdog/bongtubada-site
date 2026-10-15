@@ -164,6 +164,14 @@ section{padding:96px 0}
 .custom{background:var(--navy);color:white}
 .custom h3,.custom .price{color:white}.custom .price-list li{color:#d4dee7}
 
+/* Additional service price rows */
+.price-addon-intro{font-size:14px;color:#d4dee7;line-height:1.7;margin:16px 0 12px}
+.price-addons{list-style:none;padding:0;margin:14px 0 0}
+.price-addons li{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:14px;color:#e6edf4}
+.price-addons li:last-child{border-bottom:0}
+.price-addons strong{font-size:18px;color:var(--gold2);white-space:nowrap}
+.price-list li strong{color:var(--navy);font-weight:800}
+
 /* who */
 .for-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .for-card{border-radius:22px;background:#f7f8fa;border:1px solid #e6e9ed;padding:26px}
@@ -625,13 +633,43 @@ body.modal-open{overflow:hidden}
 
 <section id="price">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow">Price guide</div><h2>예상 접수 규모에 맞춰<br>필요한 인원만 구성합니다.</h2><p class="lead">아래 금액은 상담 기준가입니다. 실제 견적은 행사시간·장소·접수대 수·인원·선택서비스에 따라 확정됩니다.</p></div>
+    <div class="section-head"><div class="eyebrow">Price guide</div><h2>예상 접수 규모에 맞춰<br>필요한 인원만 구성합니다.</h2><p class="lead">2인 접수팀은 봉투 150개까지 40만원, 4인 접수팀은 봉투 200개까지 80만원입니다. 기본 수량 초과 시 봉투 50개당 10만원이 추가됩니다.</p></div>
     <div class="price-grid">
-      <article class="price-card"><span class="price-kicker">기본 구성</span><h3>2인 접수팀</h3><div class="price">40만원 <small>부터</small></div><ul class="price-list"><li>기준 접수 200건</li><li>2인 교차확인</li><li>현장 전산기록</li><li>최종 대사 및 인계</li></ul></article>
-      <article class="price-card featured"><span class="badge">접수량 많은 예식</span><span class="price-kicker">확장 구성</span><h3>4인 접수팀</h3><div class="price">70만원 <small>부터</small></div><ul class="price-list"><li>기준 접수 200건</li><li>복수 접수대 운영 대응</li><li>팀별 교차확인·기록</li><li>최종 대사 및 인계</li></ul></article>
-      <article class="price-card custom"><span class="price-kicker">맞춤 구성</span><h3>맞춤 견적</h3><div class="price">상담</div><ul class="price-list"><li>200건 초과: 50건 단위 추가</li><li>식권 배부 선택 가능</li><li>출장·추가 인력 협의</li><li>행사별 세부 운영 맞춤</li></ul></article>
+      <article class="price-card">
+        <span class="price-kicker">기본 구성</span>
+        <h3>2인 접수팀</h3>
+        <div class="price">40만원 <small>기본요금</small></div>
+        <ul class="price-list">
+          <li><strong>축의금 봉투 150개 포함</strong></li>
+          <li><strong>초과 봉투 50개당 +10만원</strong></li>
+          <li>2인 교차확인 및 현장 전산기록</li>
+          <li>최종 대사 및 인계</li>
+        </ul>
+      </article>
+      <article class="price-card featured">
+        <span class="badge">접수량 많은 예식</span>
+        <span class="price-kicker">확장 구성</span>
+        <h3>4인 접수팀</h3>
+        <div class="price">80만원 <small>기본요금</small></div>
+        <ul class="price-list">
+          <li><strong>축의금 봉투 200개 포함</strong></li>
+          <li><strong>초과 봉투 50개당 +10만원</strong></li>
+          <li>복수 접수대 운영 대응 및 팀별 교차확인·기록</li>
+          <li>최종 대사 및 인계</li>
+        </ul>
+      </article>
+      <article class="price-card custom">
+        <span class="price-kicker">선택 서비스</span>
+        <h3>추가 서비스</h3>
+        <p class="price-addon-intro">필요한 서비스만 선택해 추가할 수 있습니다.</p>
+        <ul class="price-addons">
+          <li><span>식권 배부</span><strong>+3만원</strong></li>
+          <li><span>혼주 물품 보관</span><strong>+20만원</strong></li>
+          <li><span>화환 정리</span><strong>+5만원</strong></li>
+        </ul>
+      </article>
     </div>
-    <p class="price-note">※ 실제 견적은 예식 시간·장소·접수대 수·예상 접수량·선택 서비스에 따라 상담 후 확정됩니다.</p>
+    <p class="price-note">※ 기본 수량 초과분은 50개 단위로 추가요금이 산정됩니다. 예식 시간·장소·접수대 수·선택 서비스 등에 따른 최종 견적은 상담 후 확정됩니다.</p>
   </div>
 </section>
 
