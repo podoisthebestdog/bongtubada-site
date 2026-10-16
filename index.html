@@ -172,6 +172,61 @@ section{padding:96px 0}
 .price-addons strong{font-size:18px;color:var(--gold2);white-space:nowrap}
 .price-list li strong{color:var(--navy);font-weight:800}
 
+
+/* Instant quote & pre-wedding checklist */
+.quote-section{background:#f7f8fa;scroll-margin-top:90px}
+.quote-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:stretch}
+.quote-panel{border-radius:26px;background:#fff;border:1px solid #e2e7ed;box-shadow:0 16px 48px rgba(7,27,50,.055);padding:34px}
+.quote-fieldset{border:0;padding:0;margin:0 0 28px;min-width:0}
+.quote-fieldset legend,.quote-field>label{display:block;color:var(--navy);font-size:17px;font-weight:850;margin-bottom:15px}
+.quote-team-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-team{cursor:pointer}
+.quote-team input{position:absolute;opacity:0;width:1px;height:1px}
+.quote-team>span{display:block;border:1.5px solid #d6dde5;border-radius:14px;padding:18px 16px;transition:background .2s,border-color .2s}
+.quote-team strong{display:block;color:var(--navy);font-size:16px}
+.quote-team small{display:block;color:#667483;font-size:13px;margin-top:5px}
+.quote-team input:checked+span{border:2px solid #ae8742;background:#fff9eb}
+.quote-team input:focus-visible+span{outline:3px solid #7e9ec7;outline-offset:3px}
+.quote-field{margin-bottom:28px}
+.quote-qty-row{display:flex;align-items:center;gap:12px;max-width:230px}
+.quote-qty-row input{width:100%;border:1.5px solid #d6dde5;border-radius:12px;padding:12px 15px;font-size:21px;font-weight:800;color:var(--navy);background:#fff}
+.quote-qty-row span{font-weight:800}
+.quote-help{font-size:13px;color:#667483;margin:10px 0 0}
+.quote-addon-options{display:grid;gap:10px}
+.quote-addon-options label{display:flex;align-items:center;gap:10px;cursor:pointer;padding:12px 14px;border:1px solid #e1e6eb;border-radius:12px;font-size:14px}
+.quote-addon-options input{accent-color:#96743b;width:18px;height:18px;flex-shrink:0}
+.quote-addon-options label span{flex:1}
+.quote-addon-options label strong{color:var(--navy);white-space:nowrap}
+.quote-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-detail-grid label{font-size:14px;font-weight:800;color:var(--navy)}
+.quote-detail-grid label small{font-size:12px;color:#778494}
+.quote-detail-grid input{display:block;margin-top:8px;width:100%;min-width:0;padding:11px;border:1px solid #d6dde5;border-radius:10px;font:inherit;color:var(--navy);background:#fff}
+.quote-result{background:var(--navy);color:#fff;display:flex;flex-direction:column}
+.quote-result-top{display:flex;justify-content:space-between;gap:8px;align-items:center;color:#d5e2f1;font-size:13px;font-weight:750}
+.quote-result-mark{border:1px solid #a78a55;color:var(--gold2);font-size:10px;letter-spacing:.1em;padding:5px 9px;border-radius:999px}
+.quote-result-label{margin:32px 0 2px;color:#bbccdd;font-size:15px}
+.quote-total{font-size:clamp(34px,3.6vw,52px);font-weight:900;letter-spacing:-.05em;color:#f0d39a;line-height:1.24;white-space:nowrap}
+.quote-current{font-size:14px;color:#d3deea;margin:12px 0 22px}
+.quote-breakdown{border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+.quote-breakdown>div{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:13px;color:#d7e2ed}
+.quote-breakdown b{color:white;white-space:nowrap;font-size:14px}
+.quote-disclaimer{color:#b9cbdd;line-height:1.75;font-size:12px;margin:20px 0 25px}
+.quote-actions{margin-top:auto;display:grid;gap:10px}
+.quote-actions button,.quote-actions a{display:block;width:100%;border:0;border-radius:12px;padding:14px 12px;text-align:center;font-size:15px;font-weight:850;cursor:pointer;text-decoration:none}
+.quote-copy{color:var(--navy);background:#f5d59c}
+.quote-chat{color:#151515;background:#fee500}
+.quote-copy-status{min-height:20px;color:#b9cbdd;font-size:12px;text-align:center;margin:12px 0 0}
+.prep-section{padding-top:82px;padding-bottom:82px}
+.prep-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.prep-card{background:#fff;border:1px solid #e4e8ed;border-radius:20px;padding:24px;box-shadow:0 8px 32px rgba(7,27,50,.04)}
+.prep-card span{color:#aa823d;font-size:13px;font-weight:900;letter-spacing:.12em}
+.prep-card h3{font-size:18px;color:var(--navy);margin:18px 0 11px;line-height:1.4}
+.prep-card p{font-size:14px;color:#647384;line-height:1.7;margin:0}
+.prep-foot{margin-top:23px;padding:19px 23px;border-radius:14px;background:#f6f4ef;color:#586779;font-size:14px}
+.prep-foot a{color:#88652f;font-weight:900;margin-left:7px}
+@media(max-width:1000px){.quote-layout{grid-template-columns:1fr}.prep-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.quote-panel{padding:23px 19px}.quote-team-grid{grid-template-columns:1fr 1fr}.quote-team>span{padding:14px 10px}.quote-team strong{font-size:14px}.quote-team small{font-size:12px}.quote-detail-grid{grid-template-columns:1fr}.quote-total{white-space:normal}.prep-grid{grid-template-columns:1fr}.prep-card{padding:21px}.prep-section{padding-top:60px;padding-bottom:60px}}
+
 /* who */
 .for-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .for-card{border-radius:22px;background:#f7f8fa;border:1px solid #e6e9ed;padding:26px}
@@ -538,7 +593,7 @@ body.modal-open{overflow:hidden}
       <span><strong>봉투바다</strong><small>ENVELOPE OCEAN</small></span>
     </a>
     <nav class="links" id="links">
-      <a href="#about">봉투바다</a><a href="#service">서비스</a><a href="#process">이용 절차</a><a href="#price">이용 요금</a><a href="#faq">FAQ</a><a href="#contact">문의하기</a>
+      <a href="#about">봉투바다</a><a href="#service">서비스</a><a href="#process">이용 절차</a><a href="#price">이용 요금</a><a href="#estimate">견적 계산기</a><a href="#faq">FAQ</a><a href="#contact">문의하기</a>
     </nav>
     <div class="header-actions">
       <a class="hbtn call-open" href="#call-reservation">☎ 전화상담 예약</a>
@@ -557,7 +612,7 @@ body.modal-open{overflow:hidden}
       <p>소중한 축의금을 다루는 만큼, 접수부터 2인 교차확인 및 영상기록·전산 기록·최종 금액 검증·인수권한 확인까지 모든 과정을 기록과 검증 절차로 관리합니다. 혼주가 안심하고 맡길 수 있도록 정확성과 투명성을 기준으로 운영합니다.</p>
       <div class="actions">
         <a class="btn btn-kakao" href="https://pf.kakao.com/_VAExiX/friend" target="_blank" rel="noopener">카카오톡으로 빠르게 상담하기 →</a>
-        <a class="btn btn-ghost" href="#service">운영 방식 자세히 보기</a>
+        <a class="btn btn-ghost" href="#estimate">예상 견적 계산하기</a>
       </div>
 </div>
   </div>
@@ -633,15 +688,15 @@ body.modal-open{overflow:hidden}
 
 <section id="price">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow">Price guide</div><h2>예상 접수 규모에 맞춰<br>필요한 인원만 구성합니다.</h2><p class="lead">2인 접수팀은 봉투 150개까지 40만원, 4인 접수팀은 봉투 200개까지 80만원입니다. 기본 수량 초과 시 봉투 50개당 10만원이 추가됩니다.</p></div>
+    <div class="section-head"><div class="eyebrow">Price guide</div><h2>예상 접수 규모에 맞춰<br>필요한 인원만 구성합니다.</h2><p class="lead">2인 접수팀은 봉투 200개까지 40만원, 4인 접수팀은 봉투 300개까지 80만원입니다. 기본 수량 초과 시 봉투 50개당 5만원이 추가됩니다.</p></div>
     <div class="price-grid">
       <article class="price-card">
         <span class="price-kicker">기본 구성</span>
         <h3>2인 접수팀</h3>
         <div class="price">40만원 <small>기본요금</small></div>
         <ul class="price-list">
-          <li><strong>축의금 봉투 150개 포함</strong></li>
-          <li><strong>초과 봉투 50개당 +10만원</strong></li>
+          <li><strong>축의금 봉투 200개 포함</strong></li>
+          <li><strong>초과 봉투 50개당 +5만원</strong></li>
           <li>2인 교차확인 및 현장 전산기록</li>
           <li>최종 대사 및 인계</li>
         </ul>
@@ -652,8 +707,8 @@ body.modal-open{overflow:hidden}
         <h3>4인 접수팀</h3>
         <div class="price">80만원 <small>기본요금</small></div>
         <ul class="price-list">
-          <li><strong>축의금 봉투 200개 포함</strong></li>
-          <li><strong>초과 봉투 50개당 +10만원</strong></li>
+          <li><strong>축의금 봉투 300개 포함</strong></li>
+          <li><strong>초과 봉투 50개당 +5만원</strong></li>
           <li>복수 접수대 운영 대응 및 팀별 교차확인·기록</li>
           <li>최종 대사 및 인계</li>
         </ul>
@@ -673,6 +728,62 @@ body.modal-open{overflow:hidden}
   </div>
 </section>
 
+
+<section id="estimate" class="quote-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Instant estimate</div>
+      <h2>내 예식 예상 비용을<br>바로 계산해보세요.</h2>
+      <p class="lead">팀 인원, 예상 <strong>축의금 봉투 수</strong>, 선택 서비스를 입력하면 예상 비용이 자동으로 계산됩니다. 하객 수와 봉투 수는 다를 수 있습니다.</p>
+    </div>
+    <div class="quote-layout">
+      <div class="quote-panel quote-inputs">
+        <fieldset class="quote-fieldset">
+          <legend>01 · 접수팀 선택</legend>
+          <div class="quote-team-grid">
+            <label class="quote-team"><input type="radio" name="quoteTeam" value="2" checked><span><strong>2인 접수팀</strong><small>200개 포함 · 40만원</small></span></label>
+            <label class="quote-team"><input type="radio" name="quoteTeam" value="4"><span><strong>4인 접수팀</strong><small>300개 포함 · 80만원</small></span></label>
+          </div>
+        </fieldset>
+        <div class="quote-field">
+          <label for="quoteQty">02 · 예상 축의금 봉투 수</label>
+          <div class="quote-qty-row"><input type="number" id="quoteQty" min="1" max="9999" step="1" inputmode="numeric" value="200" aria-describedby="quoteQtyHint"><span>개</span></div>
+          <p class="quote-help" id="quoteQtyHint">기본 수량을 넘는 봉투는 50개 단위로 올림해, 구간당 5만원씩 추가됩니다.</p>
+        </div>
+        <fieldset class="quote-fieldset">
+          <legend>03 · 추가 서비스 (선택)</legend>
+          <div class="quote-addon-options">
+            <label><input type="checkbox" class="quote-addon" value="식권 배부" data-price="30000"><span>식권 배부</span><strong>+3만원</strong></label>
+            <label><input type="checkbox" class="quote-addon" value="혼주 물품 보관" data-price="200000"><span>혼주 물품 보관</span><strong>+20만원</strong></label>
+            <label><input type="checkbox" class="quote-addon" value="화환 정리" data-price="50000"><span>화환 정리</span><strong>+5만원</strong></label>
+          </div>
+        </fieldset>
+        <div class="quote-detail-grid">
+          <label>예식일 <small>(선택)</small><input type="date" id="quoteDate"></label>
+          <label>예식장 <small>(선택)</small><input type="text" id="quoteVenue" placeholder="예: 서울 OO컨벤션" maxlength="100"></label>
+        </div>
+      </div>
+      <div class="quote-panel quote-result">
+        <div class="quote-result-top"><span>봉투바다 · 예상 견적</span><span class="quote-result-mark">ESTIMATE</span></div>
+        <p class="quote-result-label">예상 이용요금</p>
+        <div class="quote-total" id="quoteTotal" aria-live="polite">400,000원</div>
+        <p class="quote-current" id="quoteCurrent">2인 접수팀 · 봉투 200개 예상</p>
+        <div class="quote-breakdown">
+          <div><span id="quoteBaseLabel">기본요금 (봉투 200개 포함)</span><b id="quoteBasePrice">400,000원</b></div>
+          <div><span id="quoteExtraLabel">추가 봉투 0개 · 0구간</span><b id="quoteExtraPrice">0원</b></div>
+          <div><span id="quoteAddonLabel">선택 서비스 없음</span><b id="quoteAddonPrice">0원</b></div>
+        </div>
+        <p class="quote-disclaimer">위 금액은 입력 조건에 따른 예상치입니다. 출장비, 행사시간, 현장 운영 조건 등은 별도 확인 후 최종 견적에 반영됩니다.</p>
+        <div class="quote-actions">
+          <button type="button" class="quote-copy" id="quoteCopy">견적 내용 복사하기</button>
+          <a href="https://pf.kakao.com/_VAExiX/friend" class="quote-chat" target="_blank" rel="noopener">카카오톡에서 상담하기 →</a>
+        </div>
+        <p class="quote-copy-status" id="quoteCopyStatus" aria-live="polite">견적을 복사한 뒤 카카오톡 상담창에 붙여넣어 주세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section style="padding-top:0">
   <div class="wrap">
     <div class="section-head"><div class="eyebrow">Recommended for</div><h2>이런 상황에서 특히 유용합니다.</h2></div>
@@ -681,6 +792,24 @@ body.modal-open{overflow:hidden}
       <article class="for-card"><b>접수량이 많아 오류가 걱정되는 예식</b><p>하객이 많은 예식에서는 2인·4인 등 규모에 맞춰 인력을 배치해 혼입과 누락 가능성을 낮춥니다.</p></article>
       <article class="for-card"><b>현금과 명단을 체계적으로 남기고 싶은 예식</b><p>접수번호와 전산기록, 대사와 인계를 한 흐름으로 관리해 행사 종료 후 확인이 쉽도록 합니다.</p></article>
     </div>
+  </div>
+</section>
+
+
+<section id="prepare" class="prep-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Before the wedding</div>
+      <h2>예식 전, 이 네 가지를<br>함께 확인합니다.</h2>
+      <p class="lead">사전 정보가 명확할수록 현장 접수와 최종 인계까지 일관되게 진행할 수 있습니다.</p>
+    </div>
+    <div class="prep-grid">
+      <article class="prep-card"><span>01</span><h3>접수 범위와 예상 봉투 수</h3><p>신랑측·신부측·양측 중 운영 범위와 예상 봉투 수, 접수대 위치를 확인합니다.</p></article>
+      <article class="prep-card"><span>02</span><h3>예식 시간과 현장 동선</h3><p>예식장, 예식 시간, 입장 가능 시각과 접수대 설치 조건을 사전에 확인합니다.</p></article>
+      <article class="prep-card"><span>03</span><h3>현금 인계 담당자 지정</h3><p>축의금 인수자와 확인 방법, 중간인출 필요 여부를 미리 협의합니다.</p></article>
+      <article class="prep-card"><span>04</span><h3>추가 서비스 요청사항</h3><p>식권 배부, 혼주 물품 보관, 화환 정리 여부와 관련 준비물을 확인합니다.</p></article>
+    </div>
+    <div class="prep-foot">봉투바다는 접수기록·현금 대조·지정 인수자 확인을 기본 절차로 운영합니다. <a href="#contact">사전 상담하기 →</a></div>
   </div>
 </section>
 
@@ -693,7 +822,10 @@ body.modal-open{overflow:hidden}
     <div>
       <details open><summary>축의금은 현장에서 바로 확인하나요?</summary><p>기본 운영은 한 봉투씩 개봉·계수하고 다른 담당자가 동일한 현금을 독립적으로 재계수한 뒤 결과가 일치하는 경우에 기록을 확정하는 방식입니다. 행사장 환경과 계약 내용에 따라 세부 운영은 조정될 수 있습니다.</p></details>
       <details><summary>접수 내역은 어떻게 받나요?</summary><p>접수 종료 후 건수와 총액, 실제 보유 현금을 대조하고 계약에서 정한 방법으로 최종 접수기록을 지정 인수자에게 전달합니다.</p></details>
-      <details><summary>200건을 초과하면 어떻게 되나요?</summary><p>예상 접수량과 접수대 수를 기준으로 인력과 동선을 다시 산정합니다. 기준량 초과 시 50건 단위 추가요금이 적용될 수 있습니다.</p></details>
+      <details><summary>기본 포함 봉투 수를 초과하면 어떻게 되나요?</summary><p>2인 접수팀은 200개, 4인 접수팀은 300개까지 기본요금에 포함됩니다. 이를 초과하면 봉투 50개당 5만원이 추가되며, 실제 접수대 수와 운영 가능 여부는 상담으로 확인합니다.</p></details>
+      <details><summary>2인팀과 4인팀은 어떻게 다른가요?</summary><p>2인팀은 기본 봉투 200개까지 40만원, 4인팀은 300개까지 80만원입니다. 예상 봉투 수뿐 아니라 접수대 수, 양가 분리 운영 여부와 동선을 함께 확인해 적합한 팀을 안내합니다.</p></details>
+      <details><summary>예약 전에 무엇을 준비하면 되나요?</summary><p>예식일과 예식장, 신랑·신부측 운영 범위, 예상 봉투 수, 접수대 설치 조건, 최종 현금 인수자 및 추가 서비스 필요 여부를 알려주세요.</p></details>
+      <details><summary>현금은 누구에게 인계하나요?</summary><p>계약 전 정한 지정 인수자에게만 권한을 확인한 뒤 인계합니다. 중간인출이 필요할 경우 시간·금액과 인수 사실을 별도로 확인하고 기록합니다.</p></details>
       <details><summary>인천 외 지역도 가능한가요?</summary><p>가능합니다. 이동거리와 행사시간, 인원에 따라 출장비가 발생할 수 있으며 예약 전에 확정합니다.</p></details>
       <details><summary>카카오톡으로 바로 상담할 수 있나요?</summary><p>가능합니다. 페이지의 노란색 카카오톡 상담 버튼을 누르면 봉투바다 채널 친구추가 화면으로 연결됩니다.</p></details>
     </div>
@@ -720,7 +852,7 @@ body.modal-open{overflow:hidden}
         <label>성함<input id="name" required placeholder="예: 김OO"></label>
         <label>연락처<input id="phone" required placeholder="010-0000-0000"></label>
         <label>예식일<input id="date" type="date"></label>
-        <label>예상 접수 건수<select id="count"><option>200건 이하</option><option>201~300건</option><option>301~500건</option><option>500건 초과</option></select></label>
+        <label>예상 봉투 수<select id="count"><option>200개 이하</option><option>201~300개</option><option>301~500개</option><option>500개 초과</option></select></label>
         <label class="full">예식장 / 지역<input id="place" placeholder="예: 인천 송도 · OO웨딩홀"></label>
         <label class="full">문의 내용<textarea id="message" placeholder="접수대 수, 신랑/신부 측 구분, 필요한 인원 등"></textarea></label>
         <div class="full"><button class="btn" type="submit">문의 내용 작성하기 →</button></div>
@@ -787,6 +919,80 @@ function sendInquiry(e){
   const body=`성함: ${v('name')}\n연락처: ${v('phone')}\n예식일: ${v('date')||'미정'}\n예식장/지역: ${v('place')||'미정'}\n예상 접수 건수: ${v('count')}\n\n문의 내용:\n${v('message')||'없음'}`;
   location.href=`mailto:gusals933246@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+/* 봉투바다 예상 견적: 봉투 50개 단위 올림 */
+(function(){
+  const qtyEl=document.getElementById('quoteQty');
+  if(!qtyEl) return;
+  const money=n=>Number(n).toLocaleString('ko-KR')+'원';
+  const $=id=>document.getElementById(id);
+  function snapshot(){
+    const team=document.querySelector('input[name="quoteTeam"]:checked').value;
+    const included=team==='2'?200:300;
+    const base=team==='2'?400000:800000;
+    const countRaw=Number.parseInt(qtyEl.value,10);
+    const count=Number.isFinite(countRaw)?Math.min(9999,Math.max(1,countRaw)):included;
+    const extra=Math.max(0,count-included);
+    const units=Math.ceil(extra/50);
+    const extraPrice=units*50000;
+    const selected=Array.from(document.querySelectorAll('.quote-addon:checked'));
+    const addons=selected.reduce((sum,item)=>sum+Number(item.dataset.price||0),0);
+    return {team,included,base,count,extra,units,extraPrice,selected,addons,total:base+extraPrice+addons};
+  }
+  function update(){
+    const q=snapshot();
+    $('quoteTotal').textContent=money(q.total);
+    $('quoteCurrent').textContent=q.team+'인 접수팀 · 봉투 '+q.count+'개 예상';
+    $('quoteBaseLabel').textContent='기본요금 (봉투 '+q.included+'개 포함)';
+    $('quoteBasePrice').textContent=money(q.base);
+    $('quoteExtraLabel').textContent='초과 봉투 '+q.extra+'개 · '+q.units+'구간';
+    $('quoteExtraPrice').textContent=money(q.extraPrice);
+    $('quoteAddonLabel').textContent=q.selected.length?q.selected.map(i=>i.value).join(' · '):'선택 서비스 없음';
+    $('quoteAddonPrice').textContent=money(q.addons);
+  }
+  document.querySelectorAll('input[name="quoteTeam"],.quote-addon').forEach(el=>el.addEventListener('change',update));
+  qtyEl.addEventListener('input',update);
+  qtyEl.addEventListener('change',function(){
+    const q=snapshot();
+    qtyEl.value=String(q.count);
+    update();
+  });
+  $('quoteCopy').addEventListener('click',async function(){
+    const q=snapshot();
+    const venue=$('quoteVenue').value.trim();
+    const date=$('quoteDate').value;
+    const lines=[
+      '[봉투바다 축의금 접수 대행 예상 견적]',
+      '팀 구성: '+q.team+'인 접수팀',
+      '예상 봉투 수: '+q.count+'개',
+      '기본요금: '+money(q.base)+' (기본 '+q.included+'개 포함)',
+      '봉투 초과: '+q.extra+'개 / '+q.units+'구간 · '+money(q.extraPrice),
+      '추가 서비스: '+(q.selected.length?q.selected.map(i=>i.value+' '+money(Number(i.dataset.price))).join(', '):'없음'),
+      '추가 서비스 합계: '+money(q.addons),
+      '예상 합계: '+money(q.total),
+      '예식일: '+(date||'미정'),
+      '예식장: '+(venue||'미정'),
+      '※ 출장비·행사시간·현장 조건 확인 후 최종 견적 확정'
+    ];
+    const summary=lines.join('\n');
+    let copied=false;
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        await navigator.clipboard.writeText(summary);copied=true;
+      }
+    }catch(err){}
+    if(!copied){
+      const t=document.createElement('textarea');
+      t.value=summary;t.setAttribute('readonly','');t.style.position='fixed';t.style.left='-9999px';
+      document.body.appendChild(t);t.select();
+      try{copied=document.execCommand('copy')}catch(err){}
+      t.remove();
+    }
+    $('quoteCopyStatus').textContent=copied?'견적을 복사했습니다. 카카오톡 상담창에 붙여넣어 주세요.':'자동 복사가 차단되었습니다. 브라우저의 복사 권한을 확인해 주세요.';
+  });
+  update();
+})();
+
 </script>
 </body>
 </html>
