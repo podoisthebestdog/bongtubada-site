@@ -819,6 +819,41 @@ input,select,textarea,button{font-size:16px}
 }
 </style>
 
+
+<style id="contrast-image-fix-v3">
+:root{
+  --navy:#263c4c;
+  --navy2:#395465;
+  --navy3:#5d7381;
+  --ink:#1f2c35;
+  --muted:#3e4b54;
+}
+body{color:var(--ink)}
+.hero p,.lead,.service-copy .signature,.step p,.price-list li,.price-note,
+.quote-help,.quote-disclaimer,.quote-copy-status,.for-card p,.prep-card p,
+.prep-foot,details p,.faq aside p,.contact-info p,.tiny,.photo-disclaimer{
+  color:#34444f!important;
+}
+.hero h1,h2,h3,.step h3,.price-card h3,.for-card b,summary,
+.quote-fieldset legend,.quote-field>label,.quote-detail-grid label{
+  color:#263c4c!important;
+}
+.record-section,.record-section h2,.record-section .lead,.record-section .check,
+.record-section p{color:#f1f3f3!important}
+.big-cta,.big-cta h2,.big-cta p,footer,footer .tiny{color:#f4f3ef!important}
+.visual-card,.visual-card.tall{aspect-ratio:4/5!important}
+.visual-card img{
+  width:100%;height:100%;object-fit:cover;image-rendering:auto;
+}
+.visual-card:nth-child(1) img{object-position:52% center}
+.visual-card:nth-child(2) img{object-position:50% center}
+.visual-card:nth-child(3) img{object-position:58% center}
+@media(max-width:720px){
+  .visual-card,.visual-card.tall{aspect-ratio:4/5!important}
+  .hero p,.lead,.step p,.price-list li,.for-card p,details p{color:#2f404c!important}
+}
+</style>
+
 </head>
 <body>
 <header class="header">
@@ -868,7 +903,7 @@ input,select,textarea,button{font-size:16px}
       <div class="photo-stack">
         <article class="visual-card"><img src="assets/receive.jpg" alt="축의금 접수 연출 이미지" loading="lazy"><div class="visual-caption"><b>정중한 현장 접수</b><span>혼주의 중요한 역할을 전문 인력이 지원합니다.</span></div></article>
         <article class="visual-card"><img src="assets/record.jpg" alt="축의금 기록 연출 이미지" loading="lazy"><div class="visual-caption"><b>기록과 보관</b><span>접수 내역을 흐름에 맞춰 정리합니다.</span></div></article>
-        <article class="visual-card"><img src="assets/handover.svg" alt="최종 확인 및 인계 연출 이미지" loading="lazy"><div class="visual-caption"><b>최종 확인·인계</b><span>지정 인수자 확인 후 인계를 완료합니다.</span></div></article>
+        <article class="visual-card"><img src="assets/hero.jpg" alt="최종 확인 및 인계 연출 이미지" loading="lazy"><div class="visual-caption"><b>최종 확인·인계</b><span>지정 인수자 확인 후 인계를 완료합니다.</span></div></article>
       </div>
       <div class="photo-disclaimer">* 위 사진은 서비스 콘셉트를 설명하기 위한 AI 연출 이미지이며 실제 직원·고객 사진이 아닙니다.</div>
     </div>
